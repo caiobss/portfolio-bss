@@ -1,0 +1,183 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Rubik&family=Ubuntu&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: var(--font1);
+    color: var(--cor3);
+}
+
+:root{
+    --font1: 'Rubik', sans-serif;
+    --font2: 'Ubuntu', sans-serif;
+    --font3: 'Bitter', serif;
+    --background1: rgb(42, 46, 58);
+    --background2: rgb(48, 53, 66);
+    --cor1: #4ec266;
+    --cor1-hover: #3e9650;
+    --cor2: #5585cc;
+    --cor2-hover: #406397;
+    --cor3: rgb(211, 215, 230);
+}
+
+/*sessão banner*/
+
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    width: 50%;
+}
+
+.banner-content .banner-txt h1{
+    font-family: var(--font1);
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.banner-content .banner-txt legend{
+    font-family: var(--font2);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.banner-content .banner-txt p{
+    font-family: var(--font3);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.banner-content .banner-txt button{
+    background-color: var(--cor1);
+    color: var(--cor3);
+    border: none;
+    border-radius: 20px;
+    padding: .6rem 2.2rem;
+    cursor: pointer;
+    margin: 1.2rem 0;
+}
+
+.banner-content .banner-txt button:hover{
+    background-color: var(--cor1-hover);
+}
+
+.banner-content .redes i{
+    background-color: var(--cor2);
+    color: var(--cor3);
+    border-radius: 50%;
+    padding: .8rem;
+    margin-right: 1rem;
+}
+
+.banner-content .redes i:hover{
+    background-color: var(--cor2-hover);
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.banner .img-wrapper{
+    background-color: var(--background1);
+    background-image: url(img/banner-site.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*sessao sobre mim*/
+
+.section-info-me{
+    background-color: var(--background2);
+    padding: 1.5rem 0;
+}
+
+.txt-header{
+    text-align: center;
+    padding: 1.5rem ;
+}
+
+.section-info-me .infos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+
+}
+
+.section-info-me .infos .info{
+    width: 22rem;
+}
+
+.section-info-me .infos .info:nth-child(2){
+    border-radius: 50%;
+    width: 16rem;
+}
+
+/*sessão artes*/
+
+.sessao-artes{
+    background-color: var(--background1);
+}
+
+.artes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.arte{
+    position: relative;
+    background-color: var(--cor3);
+    height: 20rem;
+    width: 22rem;
+    margin: 1rem;
+    border-radius: 0 20px 20px;
+    cursor: pointer;
+}
+
+.arte:hover{
+    scale: 1.1;
+}
+
+.arte img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.arte .estrela{
+    background-color: var(--background2);
+    color: rgb(197, 197, 32);
+    padding: 1rem 2rem;
+    position: absolute;
+    border-radius: 0 0 20px 0;
+}
+
+.arte .bronze{
+    color: var(--cor3);
+}
+
+.arte .estrela:hover::after{
+    text-align: center;
+    background-color: var(--background1);
+    position: absolute;
+    left: 110%;
+    content: attr(data-arte);
+    font-size: 12px;
+    padding: 1rem 0;
+    width: 15rem;
+    letter-spacing: 2px;
+}
