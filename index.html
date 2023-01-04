@@ -8,8 +8,25 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="hamburguer">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
 
-    <header class="banner">
+    <aside class="side-bar">
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#sobremim">Sobre mim</a>
+            <a href="#arte">Artes</a>
+            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#certificados">Experiências/certificados</a>
+            <a href="#estudos">Estudos</a>
+            <a href="#local">Aonde estou</a>
+        </div>
+    </aside>
+
+    <header class="banner" id="home">
         <div class="img-wrapper"></div>
         <div class="banner-content">
             <div class="banner-txt">
@@ -19,25 +36,25 @@
                 <button class="know-more">Saiba mais</button>
             </div>
             <div class="redes">
-                <i class="fab fa-github"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fab fa-google"></i>
+                <i class="fab fa-github" onclick="window.location.href = 'https://github.com/caiobss'"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-solid fa-envelope" onclick="window.location.href ='mailto:caiobssmimer@gmail.com'"></i>
             </div>
         </div>
     </header>
 
-    <section class="section-info-me">
+    <section class="section-info-me" id="sobremim">
         <div class="txt-header">
             <h1>Sobre mim</h1>
         </div>
         <div class="infos">
             <p class="info">Pernambucano nato nascido em recife e atualmente morando em paulista, sempre tive como objetivo ganhar a vida com coisas que gosto de fazer.</p>
-            <img class="info" src="/img/unnamed.jpg" alt="Essa imagem não carregou">
+            <img class="info" src="/img/caio.jpg" alt="Essa imagem não carregou">
             <p class="info">Sempre quis compartilhar minhas artes e a área de desenvolvimento me proporcionou solucionar esse problema da maneira que eu quisesse</p>
         </div>
     </section>
 
-    <section class="sessao-artes">
+    <section class="sessao-artes" id="arte">
         <div class="txt-header">
             <h1>Artes</h1>
         </div>
@@ -92,6 +109,98 @@
             </div>
         </div>
     </section>
+
+    <section class="section-info-me" id="conhecimentos">
+        <div class="txt-header">
+            <h1>Meus conhecimentos</h1>
+        </div>
+        <div class="conhecimentos">
+            <div class="conhecimento">
+                <i class="fa-solid fa-mobile"></i>
+            </div>
+            <div class="conhecimento">
+                <i class="fa-solid fa-image"></i>
+            </div>
+            <div class="conhecimento">
+                <i class="fa-solid fa-brush"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="sessao-certificados" id="certificados">
+        <div class="txt-header">
+            <h1>Experiências e certificados</h1>
+        </div>
+        <div class="historicos">
+            <div class="historico">
+                <img src="img-certificados/certificado.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur quo ut soluta accusamus recusandae ducimus, adipisci amet error placeat.</p>
+            </div>
+            <div class="historico">
+                <img src="/img-certificados/certificado2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur quo ut soluta accusamus recusandae ducimus, adipisci amet error placeat.</p>
+            </div>
+            <div class="historico">
+                <img src="img-certificados/etepd.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur quo ut soluta accusamus recusandae ducimus, adipisci amet error placeat.</p>
+            </div>
+            <div class="historico">
+                <img src="/img-certificados/certificado3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur quo ut soluta accusamus recusandae ducimus, adipisci amet error placeat.</p>
+            </div>
+            <div class="historico">
+                <img src="img-certificados/juventude-code.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur quo ut soluta accusamus recusandae ducimus, adipisci amet error placeat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sessao-estudos" id="estudos">
+        <div class="txt-header">
+            <h1>Meus estudos</h1>
+        </div>
+        <div class="estudos">
+            <div class="estudo">
+                <img src="/img/design.jpg" alt="">
+                <div class="estudos-txt">
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ipsum facere suscipit id qui est aut expedita debitis doloribus explicabo!</p>
+                </div>
+            </div>
+            <div class="estudo">
+                <img src="/img/desenvolvimento web.jpg" alt="">
+                <div class="estudos-txt">
+                    <h3>Desenvolvimento web</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ipsum facere suscipit id qui est aut expedita debitis doloribus explicabo!</p>
+                </div>
+            </div>
+            <div class="estudo">
+                <img src="/img/composicao de cores.jpg" alt="">
+                <div class="estudos-txt">
+                    <h3>Cores e contrastes</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ipsum facere suscipit id qui est aut expedita debitis doloribus explicabo!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sessao-local" id="local">
+        <div class="txt-header">
+            <h1>Aonde estou</h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126459.4188694629!2d-34.9955684750467!3d-7.910020128119823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14232b0c2683%3A0xf71ceec9e9ecebef!2sPaulista%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1672786709297!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © 2023, Caio Bezerra - Todos os direitos reservados</p>
+            <div class="footer-redes">
+                <i class="fab fa-github" onclick="window.location.href = 'https://github.com/caiobss'"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-solid fa-envelope" onclick="window.location.href ='mailto:caiobssmimer@gmail.com'"></i>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

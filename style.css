@@ -23,6 +23,84 @@
     --cor3: rgb(211, 215, 230);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/*Menu hamburguer*/
+
+.hamburguer{
+    position: fixed;
+    top: 6%;
+    right: 4%;
+    height: 2rem;
+    width: 2rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+
+.showsidebar .hamburguer{
+    right: 16.5%;
+}
+
+.line{
+    background-color: var(--cor3);
+    height: 3px;
+    width: 100%;
+}
+.showsidebar .line:nth-child(1){
+    transform: translate(0%, .4rem) rotate(45deg);
+}
+
+.showsidebar .line:nth-child(2){
+    opacity: 0;
+}
+
+.showsidebar .line:nth-child(3){
+    transform: translate(0%, -1rem) rotate(-45deg);
+}
+
+/*Side bar*/
+
+.side-bar{
+    background-color: var(--background2);
+    position: fixed;
+    top: 0%;
+    right: -22%;
+    width: 22%;
+    height: 100%;
+    z-index: 50;
+}
+
+.showsidebar .side-bar{
+    right: 0%;
+}
+
+.side-bar .menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar .menu a{
+    line-height: 3rem;
+    margin: .2rem 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.side-bar .menu a:hover{
+    background-color: var(--background1);
+}
+
 /*sessão banner*/
 
 .banner{
@@ -43,18 +121,21 @@
     font-family: var(--font1);
     font-size: 3rem;
     padding: 1rem 0;
+    animation: exibir .6s ;
 }
 
 .banner-content .banner-txt legend{
     font-family: var(--font2);
     font-size: 1.8rem;
     padding: 1rem 0;
+    animation: exibir .7s ;
 }
 
 .banner-content .banner-txt p{
     font-family: var(--font3);
     font-weight: 600;
     font-size: 1.2rem;
+    animation: exibir .8s ;
 }
 
 .banner-content .banner-txt button{
@@ -65,6 +146,7 @@
     padding: .6rem 2.2rem;
     cursor: pointer;
     margin: 1.2rem 0;
+    animation: exibir .9s ;
 }
 
 .banner-content .banner-txt button:hover{
@@ -77,12 +159,25 @@
     border-radius: 50%;
     padding: .8rem;
     margin-right: 1rem;
+    animation: exibir 1s ;
 }
 
 .banner-content .redes i:hover{
     background-color: var(--cor2-hover);
     cursor: pointer;
     scale: 1.1;
+}
+
+@keyframes exibir{
+    0%{
+        opacity: 0;
+        transform: translate(-50rem);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translate(1);
+    }
 }
 
 .banner .img-wrapper{
@@ -98,7 +193,6 @@
 
 .section-info-me{
     background-color: var(--background2);
-    padding: 1.5rem 0;
 }
 
 .txt-header{
@@ -111,17 +205,18 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 1rem;
 
 }
 
 .section-info-me .infos .info{
     width: 22rem;
+    margin-bottom: 2rem;
 }
 
 .section-info-me .infos .info:nth-child(2){
-    border-radius: 50%;
+    border-radius: 100%;
     width: 16rem;
+    height: 16rem;
 }
 
 /*sessão artes*/
@@ -134,14 +229,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .arte{
     position: relative;
     background-color: var(--cor3);
-    height: 20rem;
-    width: 22rem;
+    height: 50vh;
+    width: 25vw;
     margin: 1rem;
     border-radius: 0 20px 20px;
     cursor: pointer;
@@ -180,4 +275,164 @@
     padding: 1rem 0;
     width: 15rem;
     letter-spacing: 2px;
+}
+
+/*sessao conhecimentos*/
+
+.conhecimentos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conhecimento{
+    background-color: var(--cor3);
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.conhecimento i{
+    color: var(--background2);
+    font-size: 5rem;
+}
+
+/*sessao de certificados e experiencias*/
+
+.sessao-certificados{
+    background-color: var(--background1);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.sessao-certificados .historicos{
+    height: 100%;
+    width: 100%;
+}
+
+.sessao-certificados .historicos .historico{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sessao-certificados .historicos .historico:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.sessao-certificados .historicos .historico:nth-child(4){
+    flex-direction: row-reverse;
+}
+
+.sessao-certificados .historicos .historico img{
+    object-fit: contain;
+    height: 18%;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.sessao-certificados .historicos .historico p{
+    width: 30%;
+}
+
+/*sessao estudos*/
+
+.sessao-estudos{
+    background-color: var(--background2);
+}
+
+.sessao-estudos .estudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.sessao-estudos .estudo{
+    background-color: var(--background1);
+    position: relative;
+    height: 30rem;
+    width: 25%;
+    border-radius: 20px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.sessao-estudos .estudos .estudo img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.sessao-estudos .estudos .estudo:hover img{
+    opacity: 0.5;
+}
+
+.sessao-estudos .estudos .estudo .estudos-txt{
+    position: absolute;
+    bottom: 10%;
+    opacity: 0;
+    padding: 0 1.5rem;
+}
+
+.sessao-estudos .estudos .estudo:hover .estudos-txt{
+    opacity: 1;
+    bottom: 35%;
+}
+
+.sessao-estudos .estudos-txt h3{
+    padding-bottom: 1rem;
+}
+
+/*sessao-local*/
+
+.sessao-local{
+    background-color: var(--background1);
+    padding-bottom: 2rem;
+}
+
+.sessao-local iframe{
+    width: 100%;
+    height: 25rem;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--background2);
+    padding: 2.8rem 0;
+    height: 100%;
+}
+
+footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+}
+
+footer .footer-content p{
+    width: 70%;
+}
+
+footer .footer-content .footer-redes{
+    display: flex;
+}
+
+.footer-content .footer-redes i{
+    cursor: pointer;
+    padding: 0 1rem;
+    font-size: 1.5rem;
 }
