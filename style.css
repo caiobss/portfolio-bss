@@ -286,6 +286,13 @@ html{
     align-items: center;
 }
 
+.conhecimentos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 .conhecimento{
     background-color: var(--cor3);
     height: 14rem;
@@ -294,7 +301,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .conhecimento i{
