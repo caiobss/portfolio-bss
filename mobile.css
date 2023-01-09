@@ -1,0 +1,123 @@
+
+@media (orientation: portrait){
+
+    /*hamburguer; sidebar; banner*/
+
+    @media (max-width: 920px){
+
+
+        .hamburguer{
+            right: 7%;
+        }
+
+        .side-bar{
+            width: 80%;
+            right: -80%;
+        }
+    }
+    
+    /*Banner*/
+
+    @media (max-width: 920px){
+        .banner .img-wrapper {
+            opacity: .5;
+            background-image: url(img/banner-site-mobile.png);
+        }
+
+    }
+    
+    @media (max-width: 600px){
+
+        .banner-content .banner-txt h1{
+            font-size: 1.2rem;
+        }
+        
+        .banner-content .banner-txt legend{
+            font-size: 15px;
+        }
+        
+        .banner-content .banner-txt p{
+            font-size: 12px;
+        }
+
+        .banner-content .banner-txt button{
+            padding: .5rem 1.8rem;
+
+        }
+
+        .banner-content .redes i{
+            padding: .6rem;
+        }
+
+    }
+
+    /*sobre-mim*/
+
+    @media (max-width: 760px){
+        
+        .section-info-me .infos .info{
+            width: 80%;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    /*Artes*/
+
+    @media (max-width: 920px) {
+        .arte{
+            height: 30rem;
+            width: 21rem;
+        }
+    }
+
+    @media (max-width: 600px){
+        .arte{
+            width: 25rem;
+        }
+
+        .arte:hover{
+            scale: none;
+        }
+        
+    }
+
+    /*Experiencias e certificados*/
+
+    @media (max-width: 920px) {
+        .sessao-certificados .historicos .historico img{
+            height: 18rem;
+            width: 21rem;
+        }
+        
+        .sessao-certificados .historicos .historico p{
+            width: 21rem;
+        }
+    }
+
+    /*Estudos*/
+
+    @media (max-width: 920px) {
+        .sessao-estudos .estudo{
+            width: 42rem;
+        }
+
+        .sessao-estudos .estudos .estudo img{
+            opacity: 0.4;
+        }
+
+        .sessao-estudos .estudos .estudo .estudos-txt{
+            opacity: 1;
+            bottom: 30%;
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .sessao-estudos .estudos .estudo .estudos-txt{
+            opacity: 1;
+    
+            font-size: 1rem;
+        }
+    }
+}

@@ -53,7 +53,7 @@ html{
     width: 100%;
 }
 .showsidebar .line:nth-child(1){
-    transform: translate(0%, .4rem) rotate(45deg);
+    transform: translate(0%, .6rem) rotate(45deg);
 }
 
 .showsidebar .line:nth-child(2){
@@ -61,7 +61,7 @@ html{
 }
 
 .showsidebar .line:nth-child(3){
-    transform: translate(0%, -1rem) rotate(-45deg);
+    transform: translate(0%, -.76rem) rotate(-45deg);
 }
 
 /*Side bar*/
@@ -104,8 +104,9 @@ html{
 /*sessão banner*/
 
 .banner{
+    background-color: var(--background1);
     position: relative;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
 }
 
@@ -181,7 +182,6 @@ html{
 }
 
 .banner .img-wrapper{
-    background-color: var(--background1);
     background-image: url(img/banner-site.png);
     background-attachment: fixed;
     background-size: cover;
@@ -209,7 +209,7 @@ html{
 }
 
 .section-info-me .infos .info{
-    width: 22rem;
+    width: 25%;
     margin-bottom: 2rem;
 }
 
