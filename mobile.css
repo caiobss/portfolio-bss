@@ -5,9 +5,12 @@
 
     @media (max-width: 920px){
 
-
         .hamburguer{
             right: 7%;
+        }
+
+        .showsidebar .hamburguer{
+            right: 60%;
         }
 
         .side-bar{
@@ -27,17 +30,21 @@
     }
     
     @media (max-width: 600px){
+        .banner-content{
+            width: 70%;
+            left: 12%;
+        }
 
         .banner-content .banner-txt h1{
-            font-size: 1.2rem;
+            font-size: 1.6rem;
         }
         
         .banner-content .banner-txt legend{
-            font-size: 15px;
+            font-size: 18px;
         }
         
         .banner-content .banner-txt p{
-            font-size: 12px;
+            font-size: 16px;
         }
 
         .banner-content .banner-txt button{
@@ -99,7 +106,7 @@
 
     @media (max-width: 920px) {
         .sessao-estudos .estudo{
-            width: 42rem;
+            width: 50rem;
         }
 
         .sessao-estudos .estudos .estudo img{
@@ -116,7 +123,6 @@
     @media (max-width: 600px) {
         .sessao-estudos .estudos .estudo .estudos-txt{
             opacity: 1;
-    
             font-size: 1rem;
         }
     }
