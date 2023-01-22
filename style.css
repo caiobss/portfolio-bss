@@ -239,7 +239,6 @@ html{
     width: 25vw;
     margin: 1rem;
     border-radius: 0 20px 20px;
-    cursor: pointer;
 }
 
 .arte:hover{
@@ -372,7 +371,6 @@ html{
     width: 25%;
     border-radius: 20px;
     margin: 1rem 0;
-    cursor: pointer;
 }
 
 .sessao-estudos .estudos .estudo img{

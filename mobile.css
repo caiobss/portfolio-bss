@@ -1,7 +1,7 @@
 
 @media (orientation: portrait){
 
-    /*hamburguer; sidebar; banner*/
+    /*hamburguer; sidebar*/
 
     @media (max-width: 920px){
 
@@ -44,7 +44,7 @@
         }
         
         .banner-content .banner-txt p{
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .banner-content .banner-txt button{
@@ -61,10 +61,10 @@
     /*sobre-mim*/
 
     @media (max-width: 760px){
-        
         .section-info-me .infos .info{
             width: 80%;
             margin-bottom: 2rem;
+            font-size: 12px;
         }
 
     }
@@ -99,6 +99,7 @@
         
         .sessao-certificados .historicos .historico p{
             width: 21rem;
+            font-size: 12px;
         }
     }
 
@@ -110,12 +111,12 @@
         }
 
         .sessao-estudos .estudos .estudo img{
-            opacity: 0.4;
+            opacity: 0.32;
         }
 
         .sessao-estudos .estudos .estudo .estudos-txt{
             opacity: 1;
-            bottom: 30%;
+            bottom: 35%;
             font-size: 1.5rem;
         }
     }
@@ -123,7 +124,129 @@
     @media (max-width: 600px) {
         .sessao-estudos .estudos .estudo .estudos-txt{
             opacity: 1;
-            font-size: 1rem;
+            font-size: 12px;
+        }
+
+    }
+}
+
+@media (orientation: landscape){
+
+    /*responsivo horizontal*/
+
+    @media (max-width: 920px){
+
+        /*hamburguer; sidebar*/
+
+        .hamburguer{
+            right: 7%;
+        }
+
+        .showsidebar .hamburguer{
+            right: 40%;
+        }
+
+        .side-bar{
+            width: 50%;
+            right: -50%;
+        }
+
+        .side-bar .menu a{
+            line-height: 1.8rem;
         }
     }
+
+    /*banner*/
+    
+    @media (max-width:920px) {
+        .banner-content .banner-txt h1{
+            font-size: 1.5rem;
+        }
+        
+        .banner-content .banner-txt legend{
+            font-size: 17px;
+        }
+        
+        .banner-content .banner-txt p{
+            font-size: 12px;
+        }
+
+        .banner-content .banner-txt button{
+            padding: .5rem 1.8rem;
+
+        }
+
+        .banner-content .redes i{
+            padding: .6rem;
+        }
+    }
+
+    /*sobre mim*/
+
+    @media (max-width: 920px) {
+        .section-info-me .infos .info{
+            font-size: 12px;
+        }
+        .section-info-me .infos .info:nth-child(2){
+            width: 13rem;
+            height: 13rem;
+        }
+    }
+
+    /*Artes*/
+    
+    @media (max-width: 920px) {
+        .arte{
+            height: 25rem;
+            width: 18rem;
+        }
+    }
+
+    /*conhecimentos*/
+
+    @media (max-width: 750px) {
+        .conhecimento{
+            height: 11rem;
+            width: 11rem;
+        }
+
+        .conhecimento i{
+            font-size: 3.5rem;
+        }
+    }
+
+    /*Experiencias e certificados*/
+
+    @media (max-width: 920px) {
+        .sessao-certificados .historicos .historico img{
+            height: 18rem;
+            width: 18rem;
+        }
+        
+        .sessao-certificados .historicos .historico p{
+            width: 18rem;
+            font-size: 12px;
+        }
+    }
+
+    /*Estudos*/
+
+    @media (max-width: 920px) {
+        .sessao-estudos .estudo{
+            width: 50rem;
+            height: 15rem;
+        }
+
+        .sessao-estudos .estudos .estudo img{
+            opacity: 0.32;
+        }
+
+        .sessao-estudos .estudos .estudo .estudos-txt{
+            opacity: 1;
+            bottom: 35%;
+            font-size: 12px;
+        }
+
+    }
+
 }
