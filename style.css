@@ -215,8 +215,9 @@ html{
 
 .section-info-me .infos .info:nth-child(2){
     border-radius: 100%;
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 /*sessão artes*/
